@@ -21,11 +21,15 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                I'm
+                <strong className="main-name"> SPARSH BAJAJ</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <p style={{className: "home-about-body", paddingLeft: 50, paddingTop: 15, fontSize: 23}}>I build pixel-perfect, engaging, <br />
+              and accessible digital experiences.
+              </p>
+
+              <div style={{ paddingLeft: 50, paddingRight: 50, paddingTop: 20, paddingBottom: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
@@ -35,7 +39,7 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: "450px"}}
               />
             </Col>
           </Row>

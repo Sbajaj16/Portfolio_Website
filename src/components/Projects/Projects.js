@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import SightSage from "../../Assets/Projects/SightSage.jpeg";
+import zazba from "../../Assets/Projects/Zazba Logo.jpg";
+import data from "../../Assets/Projects/DataScience.webp";
+import world from "../../Assets/Projects/WordLink.png";
+
+
 
 function Projects() {
   return (
@@ -15,78 +15,63 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Projects</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={SightSage}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="SightSage Food and Nutrition Inc."
+              description="Developed an E-commerce website, utilizing React.js, TypeScript, and SASS for a sophisticated Front End experience on the Shopify Platform. The project featured the creation of high-performance RESTful APIs with Node.js, enabling efficient data exchange between the website and backend systems. This integration facilitated a seamless shopping experience, from product browsing to checkout. The use of modern web technologies not only optimized the site's responsiveness and usability but also showcased advanced full-stack development skills in building scalable online platforms."
+              demoLink="https://sightsage.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+         <ProjectCard
+              imgPath={world}
+              isBlog={false}
+              title="WorldLink Exports LLC-FZ"
+              description={`Developed a  website for a Commodity Trading Company based in Dubai (U.A.E), leveraging the power of React.js and Next.js to create a dynamic and highly responsive Front End. This project involved the integration of the Mailchimp API, enabling the seamless collection of visitor contact information directly through the website. The implementation of these technologies not only enhanced the site's user experience but also facilitated an efficient mechanism for lead generation and customer engagement.`}
+              demoLink="https://worldlinkexport.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+         <ProjectCard
+              imgPath={data}
+              isBlog={false}
+              title="Statistical Significance of Weather Patterns on Bike Rental Count Predictions"
+              description={`In this project, I collaborated with a team to develop a prediction model for bike sharing demand using the "Bike Sharing Dataset" from the UCI Machine Learning Repository. We utilized the R programming language and implemented Poisson Regression to model the count data (i.e., the number of bike rentals). The predictors included temperature, humidity, wind speed, year, whether it was a working day, and the weather situation. The Poisson Regression model allowed us to effectively predict bike rental demand and contribute to the optimization of the bike sharing system.`}
+              demoLink="https://github.com/Sparsh16/stat301-Group-Project"
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
+         <ProjectCard
+              imgPath={zazba}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Zazba Trust"
+              description={`In this project, I worked on the website (built on Wix) of a Non-Profit Organization called Zazba, which is committed to helping children without access to formal education, aiming to boost their prospects for a dignified life. I focused on improving the mobile view of the website through CSS media queries and enhancing the page speed of the website by adding JavaScript code.`}
+              demoLink=" https://www.zazbatrust.org/"
             />
           </Col>
 
+         
+
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
+         <ProjectCard
+              imgPath={data}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Discriminating Between Sonar Signals Bounced Off a Metal Cylinder and a Roughly Cylindrical Rock"
+              description={`In this project, I explored the application of a K-nearest neighbors (KNN) model to classify materials based on sonar measurements, achieving an impressive accuracy of approximately 90% on an unseen dataset. This outcome was particularly surprising, given the PCA analysis revealed a seemingly random scatter of rock and metal data points without clear clusters, challenging the typical expectations for KNN classification effectiveness.`}
+              demoLink="https://github.com/Sparsh16/DSCI-100-Group-Project"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
